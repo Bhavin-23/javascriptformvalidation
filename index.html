@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="userForm" novalidate>
+      <h2>Register</h2>
+
+      <div class="form-group">
+        <label for="fullName">Full Name </label>
+        <input type="text" id="fullName" />
+        <span class="error" id="fullNameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email </label>
+        <input type="email" id="email" />
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact Number </label>
+        <input type="text" id="contact" />
+        <span class="error" id="contactError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password </label>
+        <input type="password" id="password" />
+        <span class="error" id="passwordError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password </label>
+        <input type="password" id="confirmPassword" />
+        <span class="error" id="confirmPasswordError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="city">City </label>
+        <input type="text" id="city" />
+        <span class="error" id="cityError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="country">Country </label>
+        <input type="text" id="country" />
+        <span class="error" id="countryError"></span>
+      </div>
+
+      <button type="submit">Submit</button>
+      <div id="successMessage" class="success-message"></div>
+    </form>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
